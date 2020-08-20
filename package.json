@@ -4,7 +4,7 @@
   "private": false,
   "sideEffects": false,
   "files": [
-		"dist"
+    "dist"
   ],
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "coveralls": "^3.1.0",
     "polished": "^3.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -31,7 +32,8 @@
     "build-storybook": "build-storybook -s public",
     "coverage": "react-scripts test --coverage --watchAll=false",
     "build:ts": "tsc -p tsconfig.build.json",
-    "build-storybook-quiet": "build-storybook --no-dll --quiet"
+    "build-storybook-quiet": "build-storybook --no-dll --quiet",
+    "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -67,10 +69,10 @@
     "styled-components": "^5.1.1"
   },
   "jest": {
-		"collectCoverageFrom": [
-			"!src/**/*.stories.tsx",
-			"src/**/*.tsx",
-			"!src/**/*.snap"
-		]
-	}
+    "collectCoverageFrom": [
+      "!src/**/*.stories.tsx",
+      "src/**/*.tsx",
+      "!src/**/*.snap"
+    ]
+  }
 }
