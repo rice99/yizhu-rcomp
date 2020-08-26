@@ -12,7 +12,7 @@ jobs:
       - name: Install and Build  # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           npm install
-          npm run build-storybook-quiet
+          npm run build-storybook:quiet
 
       - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -22,7 +22,7 @@ jobs:
           FOLDER: storybook-static # The folder the action should deploy.
       - name: Coveralls
         env:
-          COVERALLS_SERVICE_NAME: 'travis-pro'
+          COVERALLS_SERVICE_NAME: 'GitHub CI'
           COVERALLS_GIT_BRANCH: master
           COVERALLS_REPO_TOKEN : ${{ secrets.COVERALLS_REPO_TOKEN }}
         run: |
