@@ -1,0 +1,76 @@
+{
+  "name": "@rice99/yizhu-rcomp",
+  "version": "1.1.0",
+  "private": false,
+  "module": "dist/index.js",
+    "sideEffects": false,
+    "types": "dist/index.d.ts",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "polished": "^3.6.5",
+    "react-scripts": "3.4.3",
+    "storybook-addon-jsx": "^7.3.4",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook:quiet": "build-storybook --no-dll --quiet",
+    "build-storybook": "build-storybook -s public",
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "repository":"https://github.com/rice99/yizhu-rcomp",
+  "publishConfig": {
+     "registry": "https://npm.pkg.github.com/rice99"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-a11y": "^6.0.17",
+    "@storybook/addon-actions": "^6.0.17",
+    "@storybook/addon-essentials": "^6.0.17",
+    "@storybook/addon-knobs": "^6.0.18",
+    "@storybook/addon-links": "^6.0.17",
+    "@storybook/addon-storysource": "^6.0.17",
+    "@storybook/node-logger": "^6.0.17",
+    "@storybook/preset-create-react-app": "^2.1.2",
+    "@storybook/react": "^6.0.17",
+    "@types/styled-components": "^5.1.2",
+    "babel-loader": "^8.1.0",
+    "coveralls": "^3.1.0",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-is": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/**/*.stories.tsx",
+      "src/**/*.tsx",
+      "!src/**/*.snap"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "name":"@rice99/yizhu-rcomp",
+    "version": "1.0.0",
+    "dependencies": {
+        "polished": "^3.6.5",
+        "styled-components": "^5.1.1"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json"
+    },
+    "files": [
+		"dist"
+    ],
+    "private": false,
+    "module": "dist/index.js",
+    "sideEffects": false,
+    "types": "dist/index.d.ts",
+    "publishConfig": { "registry": "https://npm.pkg.github.com/@rice99" }
+}

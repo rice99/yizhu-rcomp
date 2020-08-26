@@ -1,0 +1,1 @@
+[![Coverage Status](https://coveralls.io/repos/github/rice99/yizhu-rcomp/badge.svg?branch=master)](https://coveralls.io/github/rice99/yizhu-rcomp?branch=master)
