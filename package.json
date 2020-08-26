@@ -3,8 +3,8 @@
   "version": "1.1.0",
   "private": false,
   "module": "dist/index.js",
-    "sideEffects": false,
-    "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -32,9 +32,9 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "repository":"https://github.com/rice99/yizhu-rcomp",
+  "repository": "https://github.com/rice99/yizhu-rcomp",
   "publishConfig": {
-     "registry": "https://npm.pkg.github.com/rice99"
+    "registry": "https://npm.pkg.github.com/rice99"
   },
   "browserslist": {
     "production": [
@@ -62,6 +62,7 @@
     "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
     "coveralls": "^3.1.0",
+    "prismjs": "^1.21.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-is": "^16.13.1",
     "styled-components": "^5.1.1"
